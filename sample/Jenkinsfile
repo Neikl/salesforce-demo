@@ -1,0 +1,31 @@
+pipeline{
+
+ agent any
+
+
+
+stages{
+
+ stage('git clone'){
+
+ steps{
+
+ git 'https://github.com/Neikl/salesforce-demo.git'
+
+ }
+
+ }
+
+ stage('Running ANT scripts'){
+
+ steps{
+
+ sh "cd sample && ant retrieveUnpackaged -v && ant deployUnpackaged -v"
+
+ }
+
+ }
+
+ }
+
+ }
