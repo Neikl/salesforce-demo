@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#68A440</headerColor>
+        <logo>purealoe</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Pure Aloe</label>
+    <navType>Standard</navType>
+    <tabs>standard-Feed</tabs>
+    <tabs>Field_Management</tabs>
+    <tabs>Harvest__c</tabs>
+    <tabs>Merchandise__c</tabs>
+    <tabs>Bundle__c</tabs>
+    <tabs>Harvest_Field__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>PureAloe_UtilityBar</utilityBar>
+</CustomApplication>

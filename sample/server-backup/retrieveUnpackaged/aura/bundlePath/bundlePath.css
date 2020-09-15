@@ -1,0 +1,14 @@
+.THIS {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    padding: 8px;
+}
+
+.THIS svg {
+    fill: #ffffff;
+}
+
+.THIS .slds-p-around_small,
+.THIS .slds-p-around_small {
+    padding: 0 0.5rem 0.25rem 0.5rem;
+}
