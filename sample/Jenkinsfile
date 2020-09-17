@@ -36,6 +36,16 @@ stages{
 
  } 
  
+ stage('Production Server status'){
+
+ steps{
+
+ sh "curl -s --head  --request GET  https://data-energy-8745-dev-ed.cs114.my.salesforce.com | grep '200'"
+
+ }
+
+ }
+ 
  }
 
  }
