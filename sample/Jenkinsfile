@@ -40,7 +40,13 @@ stages{
 
  steps{
 
- sh "curl -s --head  --request GET  https://data-energy-8745-dev-ed.cs114.my.salesforce.com | grep '200'"
+  try {         
+     sh "curl -s --head  --request GET  https://data-energy-8745-dev-ed.cs114.my.salesforce.com | grep '200'"
+     return true
+  } catch (Exception e) {
+     chatterPost body: "Production server is down !!! ${env.JOB_NAME} ${env.BUILD_DISPLAY_NAME}", credentialsId: 'team.sfdc.user'
+	 return false
+  }
 
  }
 
