@@ -52,7 +52,7 @@ stages{
 
  steps{
 
- sh "curl -s --head  --request GET  https://data-energy-8745-dev-ed.cs114.my.salesforce.com | grep '200'"
+ sh "curl -s --head  --request GET  https://page-agility-7727-dev-ed.cs6.my.salesforce.com | grep '200'"
 
  }
 
