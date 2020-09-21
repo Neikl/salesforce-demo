@@ -4,7 +4,7 @@ pipeline{
 
 stages{
 	
- stage('git clone source'){
+ stage('Git Clone SourceCode'){
 
  steps{
 
@@ -28,7 +28,7 @@ stages{
 
  }
 
- stage('git clone'){
+ stage('Git Clone ANT'){
 
  steps{
 
